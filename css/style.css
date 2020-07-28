@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.risultati ul li {
+
+  list-style-type: none;
+  border: 2px solid white;
+  padding: 20px 20px;
+  margin: 20px 40%;
+  border-radius: 10px;
+}
+
+
+header .button{
+  padding: 2px;
+}
+
+.contenitore{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-color: lightgray;
+  color: white;
+  overflow: auto;
+}
+
+.contenitore > *{
+  margin: auto;
+  text-align: center;
+}
+
+.header{
+  margin-top: 50px;
+
+}
+
+.risultati{
+  margin: 50px;
+}

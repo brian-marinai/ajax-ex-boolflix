@@ -3,28 +3,46 @@
   <head>
     <meta charset="utf-8">
     <title>Boolflix</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <script type="text/javascript" src="js/script.js"></script>
     <script id="movie-template" type="text/x-handlebars-template">
       <li>
+        MOVIE <br><br>
         {{title}} <br>
-        {{vote_average}}
+        {{original_title}}<br>
+        {{{stars}}}<br>
+        {{{flag}}}
+      </li>
+    </script>
+    <script id="serie-template" type="text/x-handlebars-template">
+      <li>
+        SERIE <br><br>
+        {{name}} <br>
+        {{original_name}}<br>
+        {{{stars}}}<br>
+        {{{flag}}}
       </li>
     </script>
   </head>
   <body>
 
-    <div class="contenitore">
+    <div class="contenitore" style="">
       <div class="header">
-
-        <input id="input" type="text" placeholder="Titolo Film">
+        <input id="input" type="text" placeholder="Titolo Film" value="matrix">
 
         <button id="button" class="button" type="button">search</button>
       </div>
-      <div id="risultati" class="risultati">
+      <div id="risultati-movie" class="risultati">
+        <ul>
+
+        </ul>
+      </div>
+      <div id="risultati-serie" class="risultati">
         <ul>
 
         </ul>

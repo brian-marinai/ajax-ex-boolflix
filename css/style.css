@@ -1,4 +1,5 @@
 body {
+  font-family: 'Lato', sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -6,7 +7,7 @@ body {
 .risultati ul li {
 
   list-style-type: none;
-  border: 2px solid white;
+  border: 2px solid black;
   padding: 20px 20px;
   margin: 20px 40%;
   border-radius: 10px;
@@ -15,6 +16,7 @@ body {
 
 header .button{
   padding: 2px;
+  font-family: 'Lato', sans-serif;
 }
 
 .contenitore{
@@ -23,7 +25,7 @@ header .button{
   width: 100vw;
   height: 100vh;
   background-color: lightgray;
-  color: white;
+  color: black;
   overflow: auto;
 }
 

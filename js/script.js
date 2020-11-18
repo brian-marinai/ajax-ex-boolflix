@@ -51,7 +51,6 @@ function getMovies(query) {
         var language = movie['original_language'];
         movie.flag = getFlag(language);
 
-
         var movieHTML = compiled(movie);
         target.append(movieHTML);
 
@@ -142,6 +141,7 @@ function getFlag(language) {
     return language;
 
 }
+
 
 
 function init () {

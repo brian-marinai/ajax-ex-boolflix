@@ -16,7 +16,10 @@
         {{title}} <br>
         {{original_title}}<br>
         {{{stars}}}<br>
-        {{{flag}}}
+        {{{flag}}}<br>
+        {{#if poster_path}}
+          <img class="poster" src="https://image.tmdb.org/t/p/w185/{{poster_path}}">
+        {{/if}}
       </li>
     </script>
     <script id="serie-template" type="text/x-handlebars-template">
@@ -25,7 +28,10 @@
         {{name}} <br>
         {{original_name}}<br>
         {{{stars}}}<br>
-        {{{flag}}}
+        {{{flag}}}<br>
+        {{#if poster_path}}
+          <img class="poster" src="https://image.tmdb.org/t/p/w185/{{poster_path}}">
+        {{/if}}
       </li>
     </script>
   </head>
